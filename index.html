@@ -1,0 +1,1040 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Newsstand</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Newsstand">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAGkklEQVR42u3deWyTZRzA8Xbt1u7ojm5jR1tg48aJIogiQYlyBAFFCV6IznCIIIQp4GTr2q7lEgIJSxgBo6BsGZGI6KKCiEEMoqBAwmm2iLS7x+6Lrod/+Kev0cizsPft9/PnsjzL+nz3tu/evr+qZ027ogKkhPEQgDhAHCAOEAeIA8QB4gBxgDhAHABxgDhAHCAOEAeIA8QB4gBxgDgA4gBxgDhAHCAOEAeIA8QB4gBxAMQB4gBxgDhAHCAOEAeIA8QB4gBxAH+jvYs/u2h3RkamXuCCB0sbP97XcFd+l4OHR0RH98lf2pLsyppqL0eOO/X8S0lPTIvjL544pK3MScsaE8W+EofU06RWnWczm8wRbC1xSDAYNHaXxRCrYXeJQ0JaekSezazVqtlg4pCQdW/Uqpw0NvhOqPvzJzXd+bnugX0NZaWN/eF3KT82SvLrixZW1NX1cuS4Cxa8mvzolFiOAcQhdWBUq1avSR85OpKdJg4JERFqq8OSkhrOZhOHhLg4jd1l6aN/bxOH7FkG6t61mjUaTm6JQ8r9D0QvX5nKlhOHtBlPxj87P5FdJw5pry0eMHGSgY0nDumT2zW56UOH6dl74pCg04UVOC1JyZzcEocUo1Frd1r0kZzcEoeUwZm63DxTGHkQh6TxE2KWLEshAuKQNmeucfbTCXRAHNKWvpE6fkIMj4NC4ggGhT4EYap38kyDM3XUoIQ4ykoae3oCAheMjAyzOy1Go5YgZB9HZUXP1k3VYo8fScnh1kKLTsfzrPxfc/z0Y/sHe+vErjlsuH5NbrqaC7cKeEF6+FDT11+2iF1z4iRD9uIBZKGEs5XiotoLv3aKXXPe/MQZM+MpQ/Zx+P3BTa4qj1vwfcbLV6XeNzaaOGT/+quzw2/Pv9nW6he4pkajXm81WQbqiEP2amt6XQ5Pb6/Is5foGI3NaYmL0xCH7F251LVze43YNVPTwvMdlvBwNXHI3nfftpaVCL65bdToyJy1oXtyq6j/+ZR81HDqZJvYNR+dErvglWTikL1gULVja/W1q91il31hQdLjU+OIQ/a83qDL5qkXfWvyqrfS7smKIg7Za2nxOazurq6A2IFB+XZzWnoEccjeHzdub9lQFQgIHRgUq7G7LAaDhjhk75ezHXt21Ypd02QOrYFBSr5CXf558xefNYldM2tM1Jur04hDCfburjv3c4fYNadOj3vuxSTikL1AQLVlQ9WN32+LXXZhdvLkx2KJQ/a6uwMOq7ul2acSek9lztr0ESMjiUP2Gup7Cws83ttBwQODCs0pKeHEIXu/Xe/evlXw207j47U2RQ8MCqH30/7wfduB/YI/U2HgIF1uvmIHBoXWm60Pljae+KZV7Jpjx0UvW5FCHEqwc0fN5UtdYtecOTth7jwjcciezxd02T3CP95m0dKUhx8xEIfstbf5Hfnuzg6/8IFBQ4bqiUP2PB7vxsIqn0/k2YteH2ZzWhKTtMQhexcvdBYXCb4yZ0zU2hQ0MCikbw09+lXLp5/cErtm5hD9uvUmZbztNNTvG/7w/fozp9vFrjnhIYUMDAr1OIJB1bbN1ZUVPWKXfeoZ46w5CcQhez09AYfVfavRJ3bZ11ekjnswhjhkr+mWr7DALXYgzF8DgwYN1hGH7FVW9GzbLPjKXFRUmN1liU/QEofsnTktfiBM8oDwgkJzhE5NHLJ3+FDTUdEDYYaPiHx7nYk4lGBXUe3F84IHwkyabCAOJfD7gxud4gfCEIdCdHb4HVZ3e5ufOCChptrrsnvEXpkjDuW43AcDYYhDOU4cb+0nn3ZOHP1RyX7xA2GIQ6WkgTDXr3UTB1SSA2GcfTAQhjgUoqVZ/EAY4lApaSDMe6IHwhCHcpw727GnuJY4IK38SHP5kWbigLQ9xbXnznYQB1TSA2Fc4gfCEIdKMQNhCgsED4QhDuWor+t12jxeb5A4IOH6te4dogfC9Ct3872vRbszMjL/z53H+Xbzv3xD7k3hH+8l6dTJNpMp4uXsZI4ckFBW2njieCtxQNrO7eIHwhCHioEwxKEKiYEwVsEDYYhDOTxu70Znld8fJA5IuHi+c1eRcq7MqWdNu8KmgiMHiAPEAeIAcYA4QBwgDhAHiAMgDhAHiAPEAeIAcUDFfSv/qPzYKB79/2729KscOcDTCogDxAHiAHEAKu5bAUcOEAeIA8QB4gBxgDhAHCAOEAdAHCAOEAeIA8QB4gBxgDhAHCAOgDhAHCAOEAeIA8QBOfgToZHzYZJV0igAAAAASUVORK5CYII=">
+<link rel="icon" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,500&display=swap">
+<style>
+:root {
+  --page: #e7e9ef; --app: #ffffff; --surface: #eef0f5; --fg: #12141a; --muted: #676c79; --faint: #a3a7b2;
+  --line: #e4e6ec; --accent: #4b45d6; --on-accent: #ffffff; --world: #2563eb; --india: #d9690b; --ne: #15803d; --ap: #c2410c;
+  --sheet: #f2f2f7; --card: #ffffff; --danger: #d92d20; --ok: #15803d; --frame: #1b1c21;
+  --font-display: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page: #0b0c10; --app: #000000; --surface: #1c1c20; --fg: #f2f2f6; --muted: #9a9daa; --faint: #5d606b;
+    --line: #26272d; --accent: #8f89ff; --on-accent: #0b0a1f; --world: #6aa5ff; --india: #ffa149; --ne: #4ade80; --ap: #fb7a4a;
+    --sheet: #111114; --card: #1c1c1f; --danger: #ff6b5e; --ok: #4ade80; --frame: #2a2b31;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  background: var(--page); color: var(--fg); font-family: var(--font-ui); font-size: 14px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 20px 16px;
+  -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent;
+}
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+a { color: inherit; }
+button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 8px; }
+
+.intro { text-align: center; max-width: 440px; display: grid; gap: 4px; }
+.intro h1 { margin: 0; font-family: var(--font-display); font-weight: 600; font-size: 22px; }
+.intro p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.45; }
+
+.phone {
+  width: 393px; max-width: 100%; height: 852px; max-height: calc(100vh - 110px); min-height: 560px;
+  background: var(--app); border-radius: 46px; border: 10px solid var(--frame);
+  box-shadow: 0 30px 60px -20px rgba(10,12,30,.35);
+  position: relative; overflow: hidden; display: flex; flex-direction: column; padding-top: 44px;
+}
+@media (max-width: 520px), (display-mode: standalone) {
+  body { padding: 0; gap: 0; }
+  .intro { display: none; }
+  .phone { width: 100%; height: 100%; max-height: none; min-height: 0; border: 0; border-radius: 0; box-shadow: none; padding-top: env(safe-area-inset-top, 0px); }
+}
+
+.topbar { flex: none; display: flex; align-items: center; justify-content: space-between; padding: 6px max(16px, env(safe-area-inset-left, 0px)) 0 max(16px, env(safe-area-inset-left, 0px)); min-height: 38px; gap: 8px; }
+.status { font-size: 12px; color: var(--muted); min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.iconbtn { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; color: var(--accent); flex: none; }
+.iconbtn:hover { background: var(--surface); }
+.iconbtn svg { width: 22px; height: 22px; }
+.spin svg { animation: spin 0.9s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.progress { height: 2px; background: transparent; flex: none; }
+.progress i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .3s; }
+
+.screen { flex: 1; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+.pad { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.head { padding-top: 2px; padding-bottom: 8px; display: grid; gap: 10px; }
+.titlerow { display: flex; align-items: flex-end; justify-content: space-between; gap: 8px; }
+.head h2 { margin: 0; font-family: var(--font-display); font-weight: 700; font-size: 34px; letter-spacing: -0.02em; line-height: 1.05; }
+.dateline { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.search { display: flex; align-items: center; gap: 8px; background: var(--surface); border-radius: 11px; padding: 0 10px; height: 38px; color: var(--muted); }
+.search svg { width: 17px; height: 17px; flex: none; }
+.search input { flex: 1; min-width: 0; border: 0; background: transparent; font: inherit; font-size: 16px; color: var(--fg); outline: none; }
+.search input::placeholder { color: var(--muted); }
+
+.chips { display: flex; gap: 8px; overflow-x: auto; padding-top: 4px; padding-bottom: 10px; scrollbar-width: none; }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: none; padding: 7px 14px; border-radius: 999px; background: var(--surface); font-size: 14px; font-weight: 500; white-space: nowrap; }
+.chip[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); }
+
+.item { position: relative; padding-top: 14px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+.open { display: grid; gap: 7px; width: 100%; text-align: left; }
+.row { display: grid; grid-template-columns: 1fr auto; gap: 14px; align-items: start; }
+.row > div { min-width: 0; display: grid; gap: 6px; }
+.srcline { display: flex; align-items: center; gap: 6px; font-size: 11px; padding-right: 30px; min-width: 0; }
+.dot { width: 6px; height: 6px; border-radius: 50%; flex: none; background: var(--rc); }
+.srcname { font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--rc); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.when { color: var(--muted); white-space: nowrap; }
+.r-arunachal { --rc: var(--ap); } .r-world { --rc: var(--world); } .r-india { --rc: var(--india); } .r-northeast { --rc: var(--ne); }
+.title { font-family: var(--font-display); font-weight: 600; font-size: 18px; line-height: 1.22; text-wrap: pretty; overflow-wrap: anywhere; }
+.summary { color: var(--muted); font-size: 14px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; }
+.is-read .title { color: var(--muted); }
+.thumb { width: 88px; height: 88px; border-radius: 10px; object-fit: cover; background: var(--surface); display: block; }
+.save { position: absolute; top: 9px; right: max(10px, env(safe-area-inset-right, 0px)); width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; color: var(--faint); }
+.save:hover { background: var(--surface); }
+.save svg { width: 18px; height: 18px; }
+.save[aria-pressed="true"] { color: var(--accent); }
+.hero .open { gap: 10px; }
+.hero .heroimg { width: 100%; aspect-ratio: 16 / 9; max-width: 100%; border-radius: 16px; object-fit: cover; background: var(--surface); display: block; }
+.hero .title { font-size: 25px; font-weight: 700; line-height: 1.15; letter-spacing: -0.015em; text-wrap: balance; }
+.hero .summary { -webkit-line-clamp: 3; font-size: 15px; }
+.hero .save { top: 22px; right: max(24px, calc(env(safe-area-inset-right, 0px) + 8px)); background: rgba(0,0,0,.4); color: #fff; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.hero .save:hover { background: rgba(0,0,0,.55); }
+.hero .save[aria-pressed="true"] { color: #fff; background: var(--accent); }
+.hero .srcline { padding-right: 0; }
+
+.skeleton { padding-top: 14px; padding-bottom: 14px; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 1fr 88px; gap: 14px; }
+.sk { background: var(--surface); border-radius: 6px; animation: pulse 1.1s ease-in-out infinite alternate; }
+@keyframes pulse { from { opacity: .55 } to { opacity: 1 } }
+.empty { padding: 70px 32px; text-align: center; display: grid; gap: 8px; justify-items: center; color: var(--muted); }
+.empty svg { width: 40px; height: 40px; color: var(--faint); }
+.empty strong { color: var(--fg); font-size: 18px; }
+.empty p { margin: 0; font-size: 14px; line-height: 1.45; }
+.primary { background: var(--accent); color: var(--on-accent); border-radius: 999px; padding: 10px 18px; font-weight: 600; font-size: 15px; text-decoration: none; display: inline-block; }
+.endnote { text-align: center; color: var(--faint); font-size: 12px; padding: 18px 16px 28px; }
+
+.tabbar { flex: none; display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid var(--line); background: var(--app); padding: 6px 4px calc(12px + env(safe-area-inset-bottom, 0px)); }
+.tab { display: grid; justify-items: center; gap: 3px; font-size: 10px; font-weight: 500; color: var(--faint); padding: 4px 0; }
+.tab svg { width: 24px; height: 24px; }
+.tab[aria-selected="true"] { color: var(--accent); }
+
+.overlay { position: absolute; inset: 0; z-index: 20; display: flex; flex-direction: column; background: var(--app); transform: translateY(100%); transition: transform .32s cubic-bezier(.2,.8,.2,1); visibility: hidden; padding-top: inherit; }
+.overlay.on { transform: none; visibility: visible; }
+.sheet { background: var(--sheet); top: 40px; border-radius: 14px 14px 0 0; box-shadow: 0 -10px 30px rgba(0,0,0,.18); padding-top: 0; }
+.scrim { position: absolute; inset: 0; z-index: 19; background: rgba(0,0,0,.35); opacity: 0; pointer-events: none; transition: opacity .3s; }
+.scrim.on { opacity: 1; pointer-events: auto; }
+@media (prefers-reduced-motion: reduce) { .overlay, .scrim, .progress i { transition: none; } .spin svg { animation: none; } }
+.obar { flex: none; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding: 12px 16px; border-bottom: 1px solid var(--line); }
+.obar h3 { margin: 0; font-size: 16px; font-weight: 600; text-align: center; }
+.textbtn { color: var(--accent); font-size: 16px; font-weight: 600; justify-self: end; }
+.obar .left { justify-self: start; font-weight: 400; }
+
+.form { flex: 1; overflow-y: auto; padding: 16px 16px calc(40px + env(safe-area-inset-bottom, 0px)); display: grid; gap: 22px; align-content: start; }
+.group { display: grid; gap: 6px; }
+.glabel { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); padding: 0 14px; display: flex; justify-content: space-between; gap: 8px; }
+.gfoot { font-size: 12px; color: var(--muted); padding: 0 14px; line-height: 1.4; }
+.card { background: var(--card); border-radius: 12px; overflow: hidden; }
+.cell { display: flex; align-items: center; gap: 12px; padding: 11px 14px; border-bottom: 1px solid var(--line); min-height: 48px; }
+.cell:last-child { border-bottom: 0; }
+.cell .txt { flex: 1; min-width: 0; display: grid; gap: 2px; }
+.cell .name { font-size: 16px; }
+.cell .meta { font-size: 12px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.meta.ok { color: var(--ok); } .meta.bad { color: var(--danger); }
+.cell input[type="text"], .cell input[type="url"], .cell select { flex: 1; min-width: 0; border: 0; background: transparent; font: inherit; font-size: 16px; color: var(--fg); outline: none; }
+.cell label.lbl { font-size: 16px; flex: none; }
+.del { color: var(--danger); font-size: 13px; flex: none; }
+.switch { position: relative; width: 51px; height: 31px; flex: none; }
+.switch input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; z-index: 1; }
+.switch span { position: absolute; inset: 0; border-radius: 999px; background: var(--line); transition: background .2s; }
+.switch span::after { content: ""; position: absolute; top: 2px; left: 2px; width: 27px; height: 27px; border-radius: 50%; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,.2); transition: transform .2s; }
+.switch input:checked + span { background: var(--ok); }
+.switch input:checked + span::after { transform: translateX(20px); }
+.switch input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
+.actionrow { width: 100%; text-align: left; padding: 13px 14px; font-size: 16px; color: var(--accent); }
+.actionrow.danger { color: var(--danger); }
+.err { font-size: 12px; color: var(--danger); padding: 0 14px; }
+
+.rbody { flex: 1; overflow-y: auto; }
+.rinner { max-width: 640px; margin: 0 auto; padding: 18px 20px calc(48px + env(safe-area-inset-bottom, 0px)); display: grid; gap: 14px; }
+.rinner h1 { margin: 0; font-family: var(--font-display); font-weight: 700; font-size: 29px; line-height: 1.15; letter-spacing: -0.015em; text-wrap: balance; overflow-wrap: anywhere; }
+.rinner .lede { margin: 0; font-family: var(--font-display); font-size: 19px; line-height: 1.5; overflow-wrap: anywhere; }
+.rinner img { width: 100%; border-radius: 12px; object-fit: cover; aspect-ratio: 16 / 9; background: var(--surface); }
+.rinner .host { color: var(--muted); font-size: 13px; }
+.rtools { justify-self: end; display: flex; gap: 2px; }
+#rcontent { display: grid; gap: 14px; }
+.rp, .rli { margin: 0; font-family: var(--font-display); font-size: 19px; line-height: 1.6; overflow-wrap: anywhere; }
+.rli { padding-left: 18px; position: relative; }
+.rli::before { content: "•"; position: absolute; left: 2px; }
+.rh { margin: 10px 0 0; font-family: var(--font-display); font-weight: 700; font-size: 22px; line-height: 1.25; text-wrap: balance; }
+.rq { margin: 0; padding-left: 14px; border-left: 3px solid var(--accent); font-family: var(--font-display); font-style: italic; font-size: 19px; line-height: 1.55; }
+.rfig { margin: 0; display: grid; gap: 6px; }
+.rfig img { aspect-ratio: auto; }
+.rfig figcaption { font-size: 12px; color: var(--muted); line-height: 1.4; }
+.rfail { display: grid; gap: 12px; justify-items: start; padding: 14px; border-radius: 12px; background: var(--surface); color: var(--muted); font-size: 14px; line-height: 1.5; }
+
+.toast { position: absolute; left: 50%; bottom: calc(96px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 10px); background: var(--fg); color: var(--app); padding: 9px 16px; border-radius: 999px; font-size: 13px; font-weight: 500; opacity: 0; transition: opacity .2s, transform .2s; z-index: 40; pointer-events: none; white-space: nowrap; max-width: calc(100% - 40px); overflow: hidden; text-overflow: ellipsis; }
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+</style>
+</head>
+<body>
+<div class="intro">
+  <h1>Newsstand</h1>
+  <p>Live headlines from 23 free-to-read papers, with a dedicated Arunachal tab. On iPhone, open this page in Safari and tap Share → Add to Home Screen to use it like an app.</p>
+</div>
+
+<div class="phone" id="phone">
+  <div class="topbar">
+    <div class="status" id="status" aria-live="polite"></div>
+    <button class="iconbtn" id="refreshBtn" aria-label="Refresh"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></svg></button>
+  </div>
+  <div class="progress"><i id="bar"></i></div>
+
+  <div class="screen" id="screen">
+    <div class="head pad">
+      <div class="dateline" id="dateline"></div>
+      <div class="titlerow">
+        <h2 id="screenTitle">Top Stories</h2>
+        <div style="display:flex;gap:2px">
+        <button class="iconbtn" id="savedBtn" aria-label="Saved stories"></button>
+        <button class="iconbtn" id="settingsBtn" aria-label="Settings and sources"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg></button>
+        </div>
+      </div>
+      <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="Search headlines" aria-label="Search headlines" autocomplete="off"></label>
+    </div>
+    <div class="chips pad" id="chips" role="toolbar" aria-label="Filter by newspaper"></div>
+    <div id="list"></div>
+  </div>
+
+  <nav class="tabbar" role="tablist" id="tabbar"></nav>
+  <div class="scrim" id="scrim"></div>
+
+  <section class="overlay" id="reader" aria-label="Story" aria-hidden="true">
+    <div class="obar">
+      <button class="textbtn left" id="readerClose">Done</button><span></span>
+      <div class="rtools"><button class="iconbtn" id="readerSave" aria-label="Save"></button></div>
+    </div>
+    <div class="rbody"><div class="rinner" id="readerBody"></div></div>
+  </section>
+
+  <section class="overlay sheet" id="settings" aria-label="Settings" aria-hidden="true">
+    <div class="obar"><span></span><h3>Sources</h3><button class="textbtn" id="settingsDone">Done</button></div>
+    <div class="form" id="settingsBody"></div>
+  </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@mozilla/readability@0.5.0/Readability.js"></script>
+<script>
+(() => {
+  'use strict';
+
+  // ---------------- Sources (free-to-read papers only) ----------------
+  const DEFAULT_SOURCES = [
+    // Arunachal Times moved to a new website (Aug 2026) with no RSS; Echo of Arunachal has none.
+    ['arunachaltimes','The Arunachal Times','','arunachal','https://arunachaltimes.in/latest-news','^https?://(www\\.)?arunachaltimes\\.in/article/[^/?#]+$'],
+    ['echoofarunachal','Echo of Arunachal','','arunachal','https://echoofarunachal.in/index.php','echoofarunachal\\.in/news_details\\.php\\?nid=\\d+'],
+    ['arunachal24','Arunachal24','https://arunachal24.in/feed/','arunachal','https://arunachal24.in/','^https?://(www\\.)?arunachal24\\.in/[a-z0-9]+(-[a-z0-9]+){3,}/?$'],
+    ['nenow-ap','Northeast Now · Arunachal','https://nenow.in/category/north-east-news/arunachal-pradesh/feed/','arunachal'],
+    ['eastmojo-ap','EastMojo · Arunachal','https://www.eastmojo.com/category/arunachal-pradesh/feed/','arunachal'],
+    ['eastmojo','EastMojo','https://www.eastmojo.com/feed/','northeast'],
+    ['nenow','Northeast Now','https://nenow.in/feed','northeast'],
+    ['sentinel','The Sentinel','https://www.sentinelassam.com/feed','northeast'],
+    ['ndtv','NDTV','https://feeds.feedburner.com/ndtvnews-india-news','india'],
+    ['indiatoday','India Today','https://www.indiatoday.in/rss/home','india'],
+    ['news18','News18','https://www.news18.com/rss/india.xml','india'],
+    ['theprint','ThePrint','https://theprint.in/category/india/feed/','india'],
+    ['thewire','The Wire','https://thewire.in/rss','india'],
+    ['bbc','BBC News','https://feeds.bbci.co.uk/news/world/rss.xml','world'],
+    ['guardian','The Guardian','https://www.theguardian.com/world/rss','world'],
+    ['aljazeera','Al Jazeera','https://www.aljazeera.com/xml/rss/all.xml','world'],
+    ['npr','NPR','https://feeds.npr.org/1004/rss.xml','world'],
+    ['dw','Deutsche Welle','https://rss.dw.com/xml/rss-en-world','world'],
+    ['france24','France 24','https://www.france24.com/en/rss','world'],
+    ['independent','The Independent','https://www.independent.co.uk/news/world/rss','world'],
+    ['sky','Sky News','https://feeds.skynews.com/feeds/rss/world.xml','world'],
+    ['cbc','CBC News','https://www.cbc.ca/webfeed/rss/rss-world','world'],
+    ['abcau','ABC Australia','https://www.abc.net.au/news/feed/51120/rss.xml','world']
+  ].map(([id, name, url, region, page, pattern]) => ({ id, name, url, region, page: page || null, pattern: pattern || null, enabled: true, custom: false }));
+  const SOURCES_VERSION = 2;
+
+
+  // A browser page can't read other sites directly unless they allow it (CORS),
+  // so each feed is tried directly first, then through public relay services.
+  const ROUTES = [
+    { id: 'direct', label: 'direct', kind: 'xml', url: u => u },
+    { id: 'allorigins', label: 'relay 1', kind: 'xml', url: u => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u) },
+    { id: 'codetabs', label: 'relay 2', kind: 'xml', url: u => 'https://api.codetabs.com/v1/proxy/?quest=' + encodeURIComponent(u) },
+    { id: 'rss2json', label: 'relay 3', kind: 'json', url: u => 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(u) }
+  ];
+
+  const TABS = [
+    { id: 'top', label: 'Top', title: 'Top Stories' },
+    { id: 'arunachal', label: 'Arunachal', title: 'Arunachal' },
+    { id: 'northeast', label: 'Northeast', title: 'Northeast' },
+    { id: 'india', label: 'India', title: 'India' },
+    { id: 'world', label: 'World', title: 'World' }
+  ];
+  const REGION_NAME = { arunachal: 'Arunachal', northeast: 'Northeast', india: 'India', world: 'World' };
+  const REGIONS = ['arunachal', 'northeast', 'india', 'world'];
+  const ICON = {
+    top: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="4" width="15" height="16" rx="2"/><path d="M18 8h3v10a2 2 0 0 1-2 2"/><path d="M7 8h7M7 12h7M7 16h4" stroke-linecap="round"/></svg>',
+    world: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>',
+    india: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h12l-2 4 2 4H5"/></svg>',
+    arunachal: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 18h18"/><path d="M7 18a5 5 0 0 1 10 0"/><path d="M12 6v3M4.9 9.9l2.1 2.1M19.1 9.9 17 12M2 14h2M20 14h2"/></svg>',
+    northeast: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M2 19 9 8l4 6 3-4 6 9z"/><path d="m7.5 10.5 1.5 1 1.5-1"/></svg>',
+    saved: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z"/></svg>',
+    savedFill: '<svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z"/></svg>',
+    search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>'
+  };
+
+  // ---------------- Storage ----------------
+  const KEY = 'newsstand-web-v1';
+  const saved0 = (() => { try { return JSON.parse(localStorage.getItem(KEY) || '{}'); } catch { return {}; } })();
+  const state = {
+    tab: 'top', filter: null, query: '',
+    loading: false, done: 0, total: 0,
+    articles: saved0.articles || [],
+    updated: saved0.updated || 0,
+    saved: saved0.saved || [],               // full article objects
+    read: new Set(saved0.read || []),
+    status: saved0.status || {},             // sourceId -> {ok, count, route, error, at}
+    routePref: saved0.routePref || {},       // sourceId -> route id that worked
+    ogCache: saved0.ogCache || {},           // link -> image url
+    firstSeen: saved0.firstSeen || {},       // link -> time an undated story first appeared
+    sources: mergeSources(saved0.sources, saved0.srcVersion),
+    openLink: null
+  };
+  function mergeSources(stored, version) {
+    if (!stored) return DEFAULT_SOURCES.map(s => ({ ...s }));
+    // New source list (Arunachal tab): start from the defaults and keep papers the user added.
+    if (version !== SOURCES_VERSION) return DEFAULT_SOURCES.map(s => ({ ...s })).concat(stored.filter(s => s.custom));
+    const ids = new Set(stored.map(s => s.id));
+    return stored.concat(DEFAULT_SOURCES.filter(s => !ids.has(s.id)).map(s => ({ ...s })));
+  }
+  let persistTimer;
+  function persist() {
+    clearTimeout(persistTimer);
+    persistTimer = setTimeout(() => {
+      const og = Object.entries(state.ogCache).slice(-400);
+      const data = {
+        articles: state.articles.slice(0, 600), updated: state.updated, saved: state.saved,
+        read: [...state.read].slice(-2000), status: state.status, routePref: state.routePref,
+        ogCache: Object.fromEntries(og), sources: state.sources, srcVersion: SOURCES_VERSION,
+        firstSeen: Object.fromEntries(Object.entries(state.firstSeen).filter(([, t]) => Date.now() - t < 14 * 864e5))
+      };
+      try { localStorage.setItem(KEY, JSON.stringify(data)); }
+      catch { try { data.articles = data.articles.slice(0, 200); data.ogCache = {}; localStorage.setItem(KEY, JSON.stringify(data)); } catch {} }
+    }, 250);
+  }
+
+  // ---------------- Helpers ----------------
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const srcById = id => state.sources.find(s => s.id === id);
+  const htmlDoc = new DOMParser();
+  function plain(html) {
+    if (!html) return '';
+    const text = htmlDoc.parseFromString('<body>' + html, 'text/html').body.textContent || '';
+    return text.replace(/The post .* appeared first on .*$/s, '').replace(/\s+/g, ' ').trim();
+  }
+  function firstImg(html) {
+    const m = /<img[^>]+src=["']([^"']+)["']/i.exec(html || '');
+    return m ? m[1] : null;
+  }
+  function secure(u) {
+    if (!u) return null;
+    u = String(u).trim().replace(/&amp;/g, '&');
+    if (u.startsWith('//')) u = 'https:' + u;
+    if (u.startsWith('http://')) u = 'https://' + u.slice(7);
+    return /^https:\/\//i.test(u) ? u : null;
+  }
+  function parseDate(s) {
+    if (!s) return null;
+    s = String(s).trim().replace(/\bIST\b/, '+0530').replace(/\bGMT\b/, '+0000');
+    let d = new Date(s);
+    if (isNaN(d) && /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$/.test(s)) d = new Date(s.replace(' ', 'T') + 'Z');
+    if (isNaN(d)) return null;
+    const t = d.getTime();
+    return Math.min(t, Date.now());
+  }
+  function ago(t) {
+    if (!t) return '';
+    const m = (Date.now() - t) / 60000;
+    if (m < 1) return 'Just now';
+    if (m < 60) return Math.floor(m) + 'm ago';
+    if (m < 1440) return Math.floor(m / 60) + 'h ago';
+    if (m < 2880) return 'Yesterday';
+    return new Date(t).toLocaleDateString('en-IN', { day: 'numeric', month: 'short' });
+  }
+  function trim(s, n) { return s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s; }
+
+  async function fetchText(url, ms = 12000) {
+    const ctl = new AbortController();
+    const timer = setTimeout(() => ctl.abort(), ms);
+    try {
+      const res = await fetch(url, { signal: ctl.signal, cache: 'no-store' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return await res.text();
+    } catch (e) {
+      throw new Error(e.name === 'AbortError' ? 'Timed out' : (e.message || 'Network error'));
+    } finally { clearTimeout(timer); }
+  }
+
+  // ---------------- Feed parsing ----------------
+  function parseXmlFeed(text, src) {
+    const doc = new DOMParser().parseFromString(text, 'text/xml');
+    if (doc.getElementsByTagName('parsererror').length) throw new Error('Not a valid feed');
+    let nodes = [...doc.getElementsByTagName('item')];
+    if (!nodes.length) nodes = [...doc.getElementsByTagName('entry')];
+    if (!nodes.length) throw new Error('Feed has no stories');
+    return nodes.slice(0, 30).map(n => {
+      const get = (...tags) => {
+        for (const t of tags) {
+          const el = n.getElementsByTagName(t)[0];
+          if (el && el.textContent.trim()) return el.textContent.trim();
+        }
+        return '';
+      };
+      let link = get('link');
+      if (!link) {
+        const l = [...n.getElementsByTagName('link')].find(l => (l.getAttribute('rel') || 'alternate') === 'alternate');
+        link = l ? l.getAttribute('href') : '';
+      }
+      if (!link) { const g = get('guid', 'id'); if (/^https?:/i.test(g)) link = g; }
+      const desc = get('description', 'summary');
+      const content = get('content:encoded', 'content');
+      let img = null;
+      for (const t of ['media:thumbnail', 'media:content', 'enclosure']) {
+        for (const el of n.getElementsByTagName(t)) {
+          const u = el.getAttribute('url');
+          const kind = (el.getAttribute('medium') || el.getAttribute('type') || 'image').toLowerCase();
+          if (u && (kind.includes('image') || t === 'media:thumbnail')) { img = u; break; }
+        }
+        if (img) break;
+      }
+      return build(src, get('title'), link, desc || content, img || firstImg(desc) || firstImg(content), get('pubDate', 'published', 'updated', 'dc:date'));
+    }).filter(Boolean);
+  }
+  function parseJsonFeed(text, src) {
+    const data = JSON.parse(text);
+    if (data.status !== 'ok' || !Array.isArray(data.items)) throw new Error(data.message || 'Relay could not read feed');
+    return data.items.slice(0, 30).map(i => build(src, i.title, i.link, i.description || i.content,
+      i.thumbnail || (i.enclosure && i.enclosure.link) || firstImg(i.description) || firstImg(i.content), i.pubDate)).filter(Boolean);
+  }
+  function build(src, title, link, desc, img, date) {
+    title = plain(title);
+    link = (link || '').trim();
+    if (!title || !/^https?:\/\//i.test(link)) return null;
+    let summary = trim(plain(desc), 280);
+    if (summary.toLowerCase() === title.toLowerCase()) summary = '';
+    return { title, link, summary, image: secure(img), date: parseDate(date), source: src.id, region: src.region };
+  }
+
+  async function loadFeed(src) {
+    const pref = state.routePref[src.id];
+    const routes = pref ? [ROUTES.find(r => r.id === pref), ...ROUTES.filter(r => r.id !== pref)].filter(Boolean) : ROUTES;
+    let lastErr = 'Unavailable';
+    for (const r of routes) {
+      try {
+        const text = await fetchText(r.url(src.url), r.id === 'direct' ? 8000 : 14000);
+        const items = r.kind === 'json' ? parseJsonFeed(text, src) : parseXmlFeed(text, src);
+        if (items.length) { state.routePref[src.id] = r.id; return { items, route: r }; }
+      } catch (e) { lastErr = e.message; }
+    }
+    throw new Error(lastErr);
+  }
+
+  // Papers without a working feed: read their public "latest news" page.
+function newsstandScrape(doc, pattern, base) {
+  var re = new RegExp(pattern, 'i');
+  var out = [], seenLink = {}, seenTitle = {};
+  function clean(s) { return (s || '').replace(/\s+/g, ' ').trim(); }
+  // Text with a space between separate elements, so blocks never run together.
+  function textOf(el) {
+    var parts = [], w = doc.createTreeWalker(el, 4, null), n;
+    while ((n = w.nextNode())) {
+      var pt = n.parentNode && n.parentNode.tagName;
+      if (pt === 'SCRIPT' || pt === 'STYLE' || pt === 'NOSCRIPT') continue;
+      parts.push(n.nodeValue);
+    }
+    return clean(parts.join(' '));
+  }
+  // Smallest text blocks inside the card, in reading order.
+  function leaves(el) {
+    var res = [], all = el.querySelectorAll('h1,h2,h3,h4,h5,h6,p,div,span,a,strong,b,em,li,time,small');
+    for (var i = 0; i < all.length; i++) {
+      var e = all[i], hasBlockChild = false;
+      for (var c = 0; c < e.children.length; c++) {
+        if (/^(DIV|P|H[1-6]|LI|UL|SECTION|ARTICLE|FIGURE|SPAN|A|TIME)$/.test(e.children[c].tagName) && clean(e.children[c].textContent)) { hasBlockChild = true; break; }
+      }
+      if (!hasBlockChild) { var t = clean(e.textContent); if (t) res.push(t); }
+    }
+    return res;
+  }
+  function abs(u) { try { return new URL(u, base).href; } catch (e) { return null; } }
+  var DATE_RE = /(?<![\d])(\d+)\s*(m|mins?|minutes?|h|hrs?|hours?|d|days?)\s+ago|(?<![\d])(\d{4})-(\d{2})-(\d{2})(?![\d])|(?<![\d])(\d{1,2})(?:st|nd|rd|th)?\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?,?\s+(\d{4})|\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+(\d{1,2}),?\s+(\d{4})|\b(yesterday)\b|\b(just now)\b/i;
+  function findDate(t) {
+    var m = DATE_RE.exec(t);
+    if (!m) return null;
+    if (m[1]) return { ago: +m[1], unit: m[2].charAt(0).toLowerCase() };
+    if (m[3]) return { day: m[3] + '-' + m[4] + '-' + m[5] };
+    if (m[6]) return { day: m[8] + '-' + m[7].slice(0, 3) + '-' + m[6] };
+    if (m[9]) return { day: m[11] + '-' + m[9].slice(0, 3) + '-' + m[10] };
+    if (m[12]) return { ago: 1, unit: 'd' };
+    if (m[13]) return { ago: 0, unit: 'm' };
+    return null;
+  }
+  function stripDate(s) { return clean(s.replace(new RegExp(DATE_RE.source, 'gi'), ' ').replace(/\b\d+\s*min(ute)?s?\s+read\b/gi, ' ')); }
+  function imgSrc(img) {
+    if (!img) return null;
+    var s = img.getAttribute('data-src') || img.getAttribute('data-lazy-src') || img.getAttribute('data-original') || img.getAttribute('src') || '';
+    if (!s || s.indexOf('data:') === 0) {
+      var ss = img.getAttribute('srcset') || img.getAttribute('data-srcset') || '';
+      s = (ss.split(',').pop() || '').trim().split(' ')[0];
+    }
+    s = abs(s);
+    if (!s || /logo|icon|avatar|sprite|placeholder|\.svg(\?|$)|\.gif(\?|$)/i.test(s)) return null;
+    return s;
+  }
+  var anchors = doc.querySelectorAll('a[href]');
+  for (var i = 0; i < anchors.length && out.length < 40; i++) {
+    var a = anchors[i];
+    var href = abs(a.getAttribute('href'));
+    if (!href) continue;
+    href = href.split('#')[0];
+    if (!re.test(href) || seenLink[href]) continue;
+
+    // Widen to the story's "card": the largest ancestor that links to this story only.
+    var card = a;
+    while (card.parentElement && card.parentElement.tagName !== 'BODY') {
+      var p = card.parentElement, links = p.querySelectorAll('a[href]'), other = false;
+      for (var j = 0; j < links.length; j++) {
+        var h2 = abs(links[j].getAttribute('href'));
+        if (h2 && re.test(h2.split('#')[0]) && h2.split('#')[0] !== href) { other = true; break; }
+      }
+      if (other) break;
+      card = p;
+    }
+
+    var title = '';
+    var cands = card.querySelectorAll('h1,h2,h3,h4,h5,h6,[class*="title"],[class*="Title"],[class*="head"],strong,b');
+    for (var k = 0; k < cands.length && !title; k++) {
+      var t = stripDate(cands[k].textContent);
+      if (t.length >= 15 && t.length <= 220) title = t;
+    }
+    var blocks = leaves(card).map(stripDate).filter(function (t) { return t.length >= 15; });
+    if (!title) {
+      var at = clean(a.getAttribute('title') || '');
+      if (at.length >= 15 && at.length <= 220) title = at;
+    }
+    if (!title) for (var b = 0; b < blocks.length && !title; b++) if (blocks[b].length <= 220) title = blocks[b];
+    if (!title) continue;
+    var tkey = title.toLowerCase();
+    if (seenTitle[tkey]) { seenLink[href] = true; continue; }
+
+    var summary = '';
+    for (var q = 0; q < blocks.length && !summary; q++) {
+      var s = blocks[q], sl = s.toLowerCase();
+      if (s.length > 40 && sl !== tkey && sl.indexOf(tkey) === -1 && tkey.indexOf(sl) === -1) summary = s;
+    }
+    var imgs = card.querySelectorAll('img'), image = null;
+    for (var r = 0; r < imgs.length && !image; r++) image = imgSrc(imgs[r]);
+
+    var timeEl = card.querySelector('time[datetime]');
+    var date = timeEl ? { iso: timeEl.getAttribute('datetime') } : findDate(textOf(card));
+
+    seenLink[href] = true; seenTitle[tkey] = true;
+    out.push({ title: title, link: href, summary: summary.length > 280 ? summary.slice(0, 277) + '…' : summary, image: image, date: date });
+  }
+  return out;
+}
+
+  const MON = { jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5, jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11 };
+  function hintToDate(h) {
+    if (!h) return null;
+    if (h.iso) return parseDate(h.iso);
+    if (h.ago != null) return Date.now() - h.ago * (h.unit === 'd' ? 864e5 : h.unit === 'h' ? 36e5 : 6e4);
+    if (h.day) {
+      const p = h.day.split('-');
+      const m = isNaN(+p[1]) ? MON[p[1].toLowerCase()] : (+p[1] - 1);
+      const d = new Date(+p[0], m, +p[2], 18, 0, 0);
+      if (isNaN(d)) return null;
+      if (d.toDateString() === new Date().toDateString()) return null;
+      return Math.min(d.getTime(), Date.now());
+    }
+    return null;
+  }
+  async function loadPage(src) {
+    let lastErr = 'Unavailable';
+    for (const r of ROUTES.filter(r => r.kind === 'xml')) {
+      try {
+        const html = await fetchText(r.url(src.page), r.id === 'direct' ? 8000 : 15000);
+        const doc = new DOMParser().parseFromString(html, 'text/html');
+        const found = newsstandScrape(doc, src.pattern, src.page);
+        if (!found.length) { lastErr = 'No stories found on page'; continue; }
+        const items = found.map(f => ({ title: f.title, link: f.link, summary: f.summary || '', image: secure(f.image),
+          date: hintToDate(f.date), source: src.id, region: src.region }));
+        return { items, route: { label: 'website' } };
+      } catch (e) { lastErr = e.message; }
+    }
+    throw new Error(lastErr);
+  }
+
+  // Feed first; the paper's website if there's no feed, it fails, or it's over 10 days old.
+  async function loadSource(src) {
+    let feed = null, feedErr = null;
+    if (src.url) { try { feed = await loadFeed(src); } catch (e) { feedErr = e; } }
+    const newest = feed ? Math.max(0, ...feed.items.map(a => a.date || 0)) : 0;
+    const stale = feed && newest && Date.now() - newest > 10 * 864e5;
+    if (src.page && src.pattern && (!feed || stale)) {
+      try { return await loadPage(src); } catch (e) { if (!feed) throw e; }
+    }
+    if (!feed) throw feedErr || new Error('Unavailable');
+    feed.stale = stale ? newest : 0;
+    return feed;
+  }
+
+  // ---------------- Refresh ----------------
+  let pending = new Map();
+  async function refresh() {
+    if (state.loading) return;
+    const active = state.sources.filter(s => s.enabled);
+    state.loading = true; state.done = 0; state.total = active.length;
+    pending = new Map();
+    renderStatus(); render();
+
+    const queue = active.slice();
+    const worker = async () => {
+      while (queue.length) {
+        const src = queue.shift();
+        try {
+          const { items, route, stale } = await loadSource(src);
+          items.forEach((a, i) => {
+            if (!a.date) { if (!state.firstSeen[a.link]) state.firstSeen[a.link] = Date.now() - (i % 40) * 6e4; a.date = state.firstSeen[a.link]; }
+          });
+          pending.set(src.id, items);
+          state.status[src.id] = { ok: true, count: items.length, route: route.label, stale: stale || 0, at: Date.now() };
+        } catch (e) {
+          state.status[src.id] = { ok: false, error: e.message, at: Date.now() };
+        }
+        state.done++;
+        mergeIn(false);
+        renderStatus();
+        scheduleRender();
+      }
+    };
+    await Promise.all(Array.from({ length: 6 }, worker));
+    mergeIn(true);
+    state.loading = false;
+    state.updated = Date.now();
+    persist();
+    render(); renderStatus();
+    if ($('settings').classList.contains('on')) renderSettings();
+    const failed = active.filter(s => state.status[s.id] && !state.status[s.id].ok).length;
+    toast(failed ? `Updated · ${failed} source${failed > 1 ? 's' : ''} didn't respond` : 'Feed updated');
+    enrichImages();
+  }
+  // Fresh stories replace each source's old ones; sources that failed keep their last stories.
+  function mergeIn() {
+    const fresh = [...pending.values()].flat();
+    const freshSources = new Set(pending.keys());
+    const kept = state.articles.filter(a => !freshSources.has(a.source));
+    const all = fresh.concat(kept).sort((a, b) => (b.date || 0) - (a.date || 0));
+    const seen = new Set(); const out = [];
+    for (const a of all) {
+      const k1 = a.link, k2 = a.title.toLowerCase();
+      if (seen.has(k1) || seen.has(k2)) continue;
+      seen.add(k1); seen.add(k2);
+      if (!a.image && state.ogCache[a.link]) a.image = state.ogCache[a.link];
+      out.push(a);
+    }
+    state.articles = out;
+  }
+  let renderTimer;
+  function scheduleRender() { clearTimeout(renderTimer); renderTimer = setTimeout(render, 150); }
+
+  // Fill missing photos from each article page's link-preview tag (og:image), or its first story photo.
+  async function enrichImages() {
+    const targets = state.articles.filter(a => !a.image && !(a.link in state.ogCache)).slice(0, 24);
+    const q = targets.slice();
+    const worker = async () => {
+      while (q.length) {
+        const a = q.shift();
+        let img = null;
+        try {
+          const html = await fetchText(ROUTES[1].url(a.link), 12000);
+          const head = html.slice(0, 250000);
+          const m = /<meta[^>]+(?:property|name)\s*=\s*["'](?:og:image|og:image:url|twitter:image)["'][^>]*content\s*=\s*["']([^"']+)["']/i.exec(head)
+                 || /<meta[^>]+content\s*=\s*["']([^"']+)["'][^>]*(?:property|name)\s*=\s*["'](?:og:image|og:image:url|twitter:image)["']/i.exec(head);
+          img = m ? secure(m[1]) : null;
+          if (!img) {
+            const at = Math.max(0, head.search(/<h1|<article|<main/i));
+            const re2 = /<img[^>]+?(?:data-src|data-lazy-src|src)\s*=\s*["']([^"']+\.(?:jpe?g|png|webp)(?:\?[^"']*)?)["']/gi;
+            re2.lastIndex = at; let mm;
+            while ((mm = re2.exec(head))) {
+              if (/logo|icon|avatar|sprite|banner|advert|\/ads?\//i.test(mm[1])) continue;
+              try { img = secure(new URL(mm[1].replace(/&amp;/g, '&'), a.link).href); } catch {}
+              break;
+            }
+          }
+        } catch {}
+        state.ogCache[a.link] = img;
+        if (img) { a.image = img; scheduleRender(); }
+      }
+    };
+    await Promise.all(Array.from({ length: 4 }, worker));
+    persist();
+  }
+
+  // ---------------- Views ----------------
+  function storiesFor(tab) {
+    if (tab === 'saved') return state.saved;
+    const enabled = new Set(state.sources.filter(s => s.enabled).map(s => s.id));
+    const live = state.articles.filter(a => enabled.has(a.source));
+    if (tab === 'top') {
+      const per = {};
+      return live.filter(a => (per[a.source] = (per[a.source] || 0) + 1) <= 3).slice(0, 90);
+    }
+    return live.filter(a => a.region === tab);
+  }
+  function shown() {
+    let list = storiesFor(state.tab);
+    if (state.filter) list = list.filter(a => a.source === state.filter);
+    const q = state.query.trim().toLowerCase();
+    if (q) list = list.filter(a => (a.title + ' ' + a.summary + ' ' + (srcById(a.source)?.name || '')).toLowerCase().includes(q));
+    return list;
+  }
+  const isSaved = link => state.saved.some(a => a.link === link);
+
+  function srcLine(a) {
+    const s = srcById(a.source);
+    const name = s ? s.name : a.source;
+    return `<div class="srcline r-${esc(a.region)}"><span class="dot"></span><span class="srcname">${esc(name)}</span>${a.date ? `<span class="when">· ${esc(ago(a.date))}</span>` : ''}</div>`;
+  }
+  function saveBtn(a) {
+    const on = isSaved(a.link);
+    return `<button class="save" data-save="${esc(a.link)}" aria-pressed="${on}" aria-label="${on ? 'Remove from Saved' : 'Save for later'}">${on ? ICON.savedFill : ICON.saved}</button>`;
+  }
+  function imgTag(a, cls) {
+    return `<img class="${cls}" src="${esc(a.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" data-imgfor="${esc(a.link)}">`;
+  }
+  function itemHTML(a, hero) {
+    const read = state.read.has(a.link) ? ' is-read' : '';
+    if (hero) {
+      return `<article class="item hero pad${read}"><button class="open" data-open="${esc(a.link)}">${imgTag(a, 'heroimg')}${srcLine(a)}
+        <span class="title">${esc(a.title)}</span>${a.summary ? `<span class="summary">${esc(a.summary)}</span>` : ''}</button>${saveBtn(a)}</article>`;
+    }
+    return `<article class="item pad${read}"><button class="open" data-open="${esc(a.link)}"><span class="row"><div>${srcLine(a)}
+      <span class="title">${esc(a.title)}</span>${a.summary ? `<span class="summary">${esc(a.summary)}</span>` : ''}</div>
+      ${a.image ? imgTag(a, 'thumb') : ''}</span></button>${saveBtn(a)}</article>`;
+  }
+  function emptyHTML() {
+    if (state.query.trim()) return `<div class="empty">${ICON.search}<strong>No results for "${esc(state.query.trim())}"</strong><p>Check the spelling or try another word.</p></div>`;
+    if (state.tab === 'saved') return `<div class="empty">${ICON.saved}<strong>No saved stories</strong><p>Tap the bookmark on any headline to keep it here.</p></div>`;
+    if (state.loading) return Array.from({ length: 6 }, () => `<div class="skeleton pad"><div style="display:grid;gap:8px"><div class="sk" style="height:10px;width:40%"></div><div class="sk" style="height:16px"></div><div class="sk" style="height:16px;width:80%"></div><div class="sk" style="height:12px;width:60%"></div></div><div class="sk" style="height:88px;border-radius:10px"></div></div>`).join('');
+    return `<div class="empty">${ICON.top}<strong>No stories yet</strong><p>None of the papers in this section answered. Check Sources to see which ones are failing.</p><button class="primary" id="emptyRefresh">Try again</button></div>`;
+  }
+  function renderChips() {
+    const el = $('chips');
+    if (state.tab === 'saved') { el.hidden = true; return; }
+    const ids = [];
+    storiesFor(state.tab).forEach(a => { if (!ids.includes(a.source)) ids.push(a.source); });
+    if (state.filter && !ids.includes(state.filter)) state.filter = null;
+    el.hidden = ids.length < 2;
+    el.innerHTML = `<button class="chip" data-chip="" aria-pressed="${!state.filter}">All</button>` +
+      ids.map(id => `<button class="chip" data-chip="${esc(id)}" aria-pressed="${state.filter === id}">${esc(srcById(id)?.name || id)}</button>`).join('');
+  }
+  function renderStatus() {
+    const st = $('status'), bar = $('bar'), btn = $('refreshBtn');
+    btn.classList.toggle('spin', state.loading);
+    if (state.loading) {
+      st.textContent = `Loading ${state.done} of ${state.total} papers…`;
+      bar.style.width = (state.total ? (state.done / state.total) * 100 : 0) + '%';
+    } else {
+      bar.style.width = '0';
+      st.textContent = state.tab === 'saved' ? `${state.saved.length} saved` : (state.updated ? `Updated ${ago(state.updated).toLowerCase()}` : '');
+    }
+  }
+  function render() {
+    $('screenTitle').textContent = state.tab === 'saved' ? 'Saved' : TABS.find(t => t.id === state.tab).title;
+    $('savedBtn').innerHTML = state.tab === 'saved' || state.saved.length ? ICON.savedFill : ICON.saved;
+    $('savedBtn').setAttribute('aria-pressed', String(state.tab === 'saved'));
+    $('dateline').textContent = new Date().toLocaleDateString('en-IN', { weekday: 'long', day: 'numeric', month: 'long' });
+    $('tabbar').innerHTML = TABS.map(t => `<button class="tab" role="tab" data-tab="${t.id}" aria-selected="${t.id === state.tab}">${ICON[t.id]}${t.label}</button>`).join('');
+    renderChips(); renderStatus();
+    const items = shown();
+    const heroOK = !state.query.trim() && state.tab !== 'saved' && items[0] && items[0].image;
+    $('list').innerHTML = items.length
+      ? items.map((a, i) => itemHTML(a, i === 0 && heroOK)).join('') + `<div class="endnote">${items.length} stories</div>`
+      : emptyHTML();
+  }
+
+  // Broken images: drop them instead of showing a broken icon.
+  document.addEventListener('error', e => {
+    const img = e.target;
+    if (!(img instanceof HTMLImageElement) || !img.dataset.imgfor) return;
+    const a = state.articles.find(x => x.link === img.dataset.imgfor);
+    if (a) a.image = null;
+    img.remove();
+  }, true);
+
+  let toastTimer;
+  function toast(msg) {
+    const t = $('toast'); t.textContent = msg; t.classList.add('show');
+    clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove('show'), 2200);
+  }
+  function findArticle(link) { return state.articles.find(a => a.link === link) || state.saved.find(a => a.link === link); }
+  function toggleSave(link) {
+    if (isSaved(link)) { state.saved = state.saved.filter(a => a.link !== link); toast('Removed from Saved'); }
+    else { const a = findArticle(link); if (!a) return; state.saved.unshift({ ...a }); toast('Saved for later'); }
+    persist(); render(); if (state.openLink === link) readerTools();
+  }
+
+  // ---------------- Story sheet ----------------
+  function showOverlay(id, on) {
+    const el = $(id); el.classList.toggle('on', on); el.setAttribute('aria-hidden', String(!on));
+    $('scrim').classList.toggle('on', on && id === 'settings');
+  }
+  function readerTools() {
+    const on = isSaved(state.openLink); const b = $('readerSave');
+    b.innerHTML = on ? ICON.savedFill : ICON.saved; b.setAttribute('aria-label', on ? 'Remove from Saved' : 'Save');
+  }
+  // ---------------- Built-in reader ----------------
+  // The story page is downloaded in the background, cleaned with Mozilla Readability,
+  // and shown here as plain text blocks. No website is opened.
+  const articleCache = new Map();
+  function toBlocks(html, baseUrl, leadImage) {
+    const holder = document.createElement('div');
+    holder.innerHTML = html;
+    const blocks = [], seen = new Set(leadImage ? [leadImage] : []);
+    const txt = el => (el.textContent || '').replace(/\s+/g, ' ').trim();
+    const abs = u => { try { return new URL(u, baseUrl).href; } catch { return null; } };
+    const pushImg = (img, cap) => {
+      let src = img.getAttribute('data-src') || img.getAttribute('data-original') || img.getAttribute('data-lazy-src') || img.getAttribute('src') || '';
+      if (!src || src.startsWith('data:')) src = ((img.getAttribute('srcset') || img.getAttribute('data-srcset') || '').split(',').pop() || '').trim().split(' ')[0];
+      src = secure(abs(src));
+      if (!src || /\.svg(\?|$)/i.test(src) || seen.has(src)) return;
+      const w = parseInt(img.getAttribute('width') || '0', 10); if (w && w < 120) return;
+      seen.add(src); blocks.push({ t: 'img', src, cap: cap ? txt(cap) : '' });
+    };
+    const walk = node => {
+      for (const el of node.children) {
+        const tag = el.tagName; let s;
+        if (/^H[1-6]$/.test(tag)) { s = txt(el); if (s) blocks.push({ t: 'h', s }); }
+        else if (tag === 'P') { const im = el.querySelector('img'); if (im) pushImg(im); s = txt(el); if (s) blocks.push({ t: 'p', s }); }
+        else if (tag === 'BLOCKQUOTE') { s = txt(el); if (s) blocks.push({ t: 'q', s }); }
+        else if (tag === 'UL' || tag === 'OL') { for (const li of el.querySelectorAll('li')) { s = txt(li); if (s) blocks.push({ t: 'li', s }); } }
+        else if (tag === 'FIGURE' || tag === 'PICTURE') { const fi = el.querySelector('img'); if (fi) pushImg(fi, el.querySelector('figcaption')); else walk(el); }
+        else if (tag === 'IMG') pushImg(el);
+        else if (tag === 'PRE' || tag === 'TABLE') { s = txt(el); if (s) blocks.push({ t: 'p', s }); }
+        else if (/^(SCRIPT|STYLE|NOSCRIPT|IFRAME|SVG|BUTTON|FORM)$/i.test(tag)) { }
+        else if (!el.children.length) { s = txt(el); if (s) blocks.push({ t: 'p', s }); }
+        else walk(el);
+      }
+    };
+    walk(holder);
+    return blocks;
+  }
+  async function getArticle(a) {
+    if (articleCache.has(a.link)) return articleCache.get(a.link);
+    if (typeof Readability !== 'function') throw new Error('Reader library did not load');
+    let lastErr = 'Could not load the story';
+    for (const r of ROUTES.slice(0, 3)) {
+      try {
+        const html = await fetchText(r.url(a.link), r.id === 'direct' ? 8000 : 15000);
+        const doc = new DOMParser().parseFromString(html, 'text/html');
+        const base = doc.createElement('base'); base.href = a.link; doc.head.prepend(base);
+        const parsed = new Readability(doc, { charThreshold: 300 }).parse();
+        if (!parsed || !parsed.content) { lastErr = 'No article text found'; continue; }
+        const title = a.title.toLowerCase();
+        const blocks = toBlocks(parsed.content, a.link, a.image)
+          .filter(b => !(b.t === 'h' && (b.s.toLowerCase() === title || (title.includes(b.s.toLowerCase()) && b.s.length > 20))));
+        const words = blocks.filter(b => b.t !== 'img').map(b => b.s).join(' ').split(/\s+/).length;
+        if (words < 120) { lastErr = 'Story text too short'; continue; }
+        const result = { byline: (parsed.byline || '').trim(), blocks };
+        articleCache.set(a.link, result);
+        return result;
+      } catch (e) { lastErr = e.message; }
+    }
+    throw new Error(lastErr);
+  }
+  function blockHTML(b) {
+    switch (b.t) {
+      case 'h': return `<h2 class="rh">${esc(b.s)}</h2>`;
+      case 'q': return `<blockquote class="rq">${esc(b.s)}</blockquote>`;
+      case 'li': return `<p class="rli">${esc(b.s)}</p>`;
+      case 'img': return `<figure class="rfig"><img src="${esc(b.src)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()">${b.cap ? `<figcaption>${esc(b.cap)}</figcaption>` : ''}</figure>`;
+      default: return `<p class="rp">${esc(b.s)}</p>`;
+    }
+  }
+  async function openStory(link) {
+    const a = findArticle(link); if (!a) return;
+    const s = srcById(a.source);
+    const name = s ? s.name : '';
+    state.openLink = link; state.read.add(link); persist();
+    const head = `${srcLine(a)}<h1>${esc(a.title)}</h1><div id="rbyline" class="host"></div>
+      ${a.image ? `<img src="${esc(a.image)}" alt="" referrerpolicy="no-referrer" onerror="this.remove()">` : ''}`;
+    const skeleton = `${a.summary ? `<p class="lede" style="color:var(--muted)">${esc(a.summary)}</p>` : ''}
+      <div style="display:grid;gap:10px">${[1, 1, .6, 1, 1, .7].map(w => `<div class="sk" style="height:14px;width:${w * 100}%"></div>`).join('')}
+      <span class="host">Loading full story…</span></div>`;
+    $('readerBody').innerHTML = head + `<div id="rcontent">${skeleton}</div>`;
+    readerTools();
+    $('reader').querySelector('.rbody').scrollTop = 0;
+    showOverlay('reader', true);
+    render();
+    try {
+      const art = await getArticle(a);
+      if (state.openLink !== link) return;
+      if (art.byline) $('rbyline').textContent = art.byline;
+      $('rcontent').innerHTML = art.blocks.map(blockHTML).join('') + `<p class="host" style="margin-top:12px">Source: ${esc(name)}</p>`;
+    } catch (e) {
+      if (state.openLink !== link) return;
+      $('rcontent').innerHTML = `${a.summary ? `<p class="lede">${esc(a.summary)}</p>` : ''}
+        <div class="rfail"><span>The full text of this story couldn't be loaded (${esc(e.message)}). The paper may block readers, or the connection dropped.</span>
+        <button class="primary" data-retry="${esc(link)}">Try again</button></div>`;
+    }
+  }
+
+  // ---------------- Sources sheet ----------------
+  let confirmReset = false, addError = '', adding = false;
+  function statusMeta(s) {
+    const st = state.status[s.id];
+    if (!s.enabled) return `<span class="meta">Off</span>`;
+    if (!st) return `<span class="meta">Not checked yet</span>`;
+    if (st.ok && st.stale) return `<span class="meta bad">⚠ Not updated since ${esc(new Date(st.stale).toLocaleDateString('en-IN', { day: 'numeric', month: 'short' }))}</span>`;
+    if (st.ok) return `<span class="meta ok">✓ ${st.count} stories · ${esc(st.route)} · ${esc(ago(st.at).toLowerCase())}</span>`;
+    return `<span class="meta bad">✕ ${esc(st.error)}</span>`;
+  }
+  function renderSettings() {
+    const regions = REGIONS;
+    const enabled = state.sources.filter(s => s.enabled);
+    const okCount = enabled.filter(s => state.status[s.id]?.ok).length;
+    $('settingsBody').innerHTML = `
+      <div class="group"><div class="card">
+        <div class="cell"><span class="txt"><span class="name">${okCount} of ${enabled.length} papers working</span>
+          <span class="meta">${state.updated ? 'Last checked ' + esc(ago(state.updated).toLowerCase()) : 'Not checked yet'}</span></span>
+          <button class="textbtn" id="recheck" style="font-size:15px">${state.loading ? 'Checking…' : 'Check again'}</button></div>
+      </div><div class="gfoot">"Direct" means the paper's feed loaded straight away. "Relay" means it came through a free public relay, which can be slower. "Website" means the paper has no working feed, so its latest-news page was read instead.</div></div>
+
+      ${regions.map(r => `<div class="group"><div class="glabel"><span>${REGION_NAME[r]}</span></div><div class="card">
+        ${state.sources.filter(s => s.region === r).map(s => `
+          <div class="cell"><span class="txt"><span class="name">${esc(s.name)}</span>${statusMeta(s)}</span>
+            ${s.custom ? `<button class="del" data-del="${esc(s.id)}">Delete</button>` : ''}
+            <span class="switch"><input type="checkbox" data-src="${esc(s.id)}" id="src-${esc(s.id)}" ${s.enabled ? 'checked' : ''} aria-label="${esc(s.name)}"><span></span></span></div>`).join('')}
+      </div></div>`).join('')}
+
+      <div class="group"><div class="glabel"><span>Add a newspaper</span></div>
+        <form class="card" id="addForm" novalidate>
+          <div class="cell"><input type="text" id="addName" placeholder="Name (e.g. Assam Tribune)" aria-label="Newspaper name"></div>
+          <div class="cell"><input type="url" id="addUrl" placeholder="RSS feed URL" aria-label="RSS feed URL" autocapitalize="off" spellcheck="false"></div>
+          <div class="cell"><label class="lbl" for="addRegion">Section</label>
+            <select id="addRegion">${regions.map(r => `<option value="${r}" ${r === 'arunachal' ? 'selected' : ''}>${REGION_NAME[r]}</option>`).join('')}</select></div>
+          <button class="actionrow" type="submit" ${adding ? 'disabled' : ''}>${adding ? 'Checking feed…' : 'Add Source'}</button>
+        </form>
+        ${addError ? `<div class="err">${esc(addError)}</div>` : ''}
+        <div class="gfoot">Search "&lt;paper name&gt; RSS" to find a feed address. The feed is tested before it's added.</div>
+      </div>
+
+      <div class="group"><div class="card">
+        ${confirmReset
+          ? `<button class="actionrow danger" id="resetYes">Remove custom sources and restore defaults</button><button class="actionrow" id="resetNo">Cancel</button>`
+          : `<button class="actionrow danger" id="resetBtn">Restore Default Sources</button>`}
+      </div></div>`;
+  }
+
+  // ---------------- Events ----------------
+  document.addEventListener('click', e => {
+    const el = e.target.closest('button'); if (!el) return;
+    const d = el.dataset;
+    if (d.tab) { state.tab = d.tab; state.filter = null; $('screen').scrollTop = 0; render(); return; }
+    if (d.chip !== undefined) { state.filter = d.chip || null; render(); return; }
+    if (d.save) { toggleSave(d.save); return; }
+    if (d.open) { openStory(d.open); return; }
+    if (d.retry) { articleCache.delete(d.retry); openStory(d.retry); return; }
+    if (d.del) {
+      state.sources = state.sources.filter(s => s.id !== d.del);
+      state.articles = state.articles.filter(a => a.source !== d.del);
+      persist(); renderSettings(); render(); toast('Source deleted'); return;
+    }
+    switch (el.id) {
+      case 'refreshBtn': case 'emptyRefresh': refresh(); break;
+      case 'savedBtn': state.tab = state.tab === 'saved' ? 'top' : 'saved'; state.filter = null; $('screen').scrollTop = 0; render(); break;
+      case 'recheck': refresh().then(renderSettings); renderSettings(); break;
+      case 'settingsBtn': confirmReset = false; addError = ''; renderSettings(); showOverlay('settings', true); break;
+      case 'settingsDone': showOverlay('settings', false); break;
+      case 'readerClose': showOverlay('reader', false); state.openLink = null; break;
+      case 'readerSave': if (state.openLink) toggleSave(state.openLink); break;
+      case 'resetBtn': confirmReset = true; renderSettings(); break;
+      case 'resetNo': confirmReset = false; renderSettings(); break;
+      case 'resetYes':
+        state.sources = DEFAULT_SOURCES.map(s => ({ ...s })); confirmReset = false;
+        persist(); renderSettings(); render(); toast('Default sources restored'); refresh(); break;
+    }
+  });
+  $('scrim').addEventListener('click', () => showOverlay('settings', false));
+
+  document.addEventListener('change', e => {
+    const t = e.target;
+    if (t.dataset && t.dataset.src) {
+      const s = srcById(t.dataset.src); if (!s) return;
+      s.enabled = t.checked; persist(); render(); renderSettings();
+      if (t.checked && !state.articles.some(a => a.source === s.id)) {
+        loadSource(s).then(({ items, route }) => {
+          state.status[s.id] = { ok: true, count: items.length, route: route.label, at: Date.now() };
+          pending = new Map([[s.id, items]]); mergeIn(); persist(); render(); renderSettings();
+        }).catch(err => { state.status[s.id] = { ok: false, error: err.message, at: Date.now() }; renderSettings(); });
+      }
+    }
+  });
+
+  document.addEventListener('submit', async e => {
+    if (e.target.id !== 'addForm') return;
+    e.preventDefault();
+    const name = $('addName').value.trim();
+    let url = $('addUrl').value.trim();
+    const region = $('addRegion').value;
+    if (!url) { addError = "Enter the paper's RSS feed address."; renderSettings(); return; }
+    if (!/^https?:\/\//i.test(url)) url = 'https://' + url;
+    let host; try { host = new URL(url).hostname.replace(/^www\./, ''); } catch { addError = "That doesn't look like a web address. Check it and try again."; renderSettings(); return; }
+    const src = { id: 'custom-' + Date.now(), name: name || host, url, region, enabled: true, custom: true };
+    adding = true; addError = ''; renderSettings();
+    try {
+      const { items, route } = await loadSource(src);
+      state.sources.push(src);
+      state.status[src.id] = { ok: true, count: items.length, route: route.label, at: Date.now() };
+      pending = new Map([[src.id, items]]); mergeIn();
+      persist(); render(); toast(`Added ${src.name} · ${items.length} stories`);
+    } catch (err) {
+      addError = `Couldn't read a news feed there (${err.message}). Feed addresses usually end in /feed, /rss or .xml.`;
+    }
+    adding = false; renderSettings();
+  });
+
+  $('q').addEventListener('input', e => { state.query = e.target.value; render(); });
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    if ($('settings').classList.contains('on')) showOverlay('settings', false);
+    else if ($('reader').classList.contains('on')) { showOverlay('reader', false); state.openLink = null; }
+  });
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible' && Date.now() - state.updated > 10 * 60000) refresh();
+  });
+  setInterval(() => { if (!state.loading) renderStatus(); }, 30000);
+
+  render();
+  if (!state.articles.length || Date.now() - state.updated > 10 * 60000) refresh();
+})();
+</script>
+</body>
+</html>
